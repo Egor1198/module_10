@@ -19,7 +19,7 @@ write_words(200, "example3.txt")
 write_words(100, "example4.txt")
 
 end_time = datetime.now()
-time_total_1 = start_time - end_time
+time_total_1 = end_time - start_time
 print(f"Время выполнения последовательных вызовов: {time_total_1}")
 
 
@@ -39,5 +39,6 @@ for thread in threads:
     thread.join()
 
 end_time = datetime.now()
-time_total_2 = start_time - end_time
-print(f"Время выполнения с использованием потоков: {time_total_1-time_total_2}")
+time_total_2 = end_time - start_time
+print(f'Время работы потоков {time_total_2}')
+
