@@ -12,7 +12,7 @@ def read_info(name):
                 break
 
 
-filenames = [f'./file_{number}.txt' for number in range(1, 5)]
+filenames = [f'./file {number}.txt' for number in range(1, 5)]
 
 
 start_1 = datetime.datetime.now()
